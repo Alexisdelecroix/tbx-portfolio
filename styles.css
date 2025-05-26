@@ -29,7 +29,7 @@ body {
 	--g: 10px; /* Gouttière entre les cellules */
 	--f: 1.5; /* Facteur de zoom au survol */
 	--font-size: 40px; /* Taille de police pour la galerie */
-	--couleur-fonce: #E09083; /* Couleur principale */
+	--couleur-fonce: black; /* Couleur principale */
 	--couleur-clair: white; /* Couleur secondaire */
 }
 
@@ -231,7 +231,7 @@ body {
 }
 
 .text-portfolio {
-	top: -5rem; /* Position verticale par rapport au centre */
+	top: -7rem; /* Position verticale par rapport au centre */
 	font-size: 100px; /* Grande taille pour impact visuel */
 	font-weight: normal; /* Poids normal */
 }
@@ -342,7 +342,7 @@ body {
 .titre {
 	font-family: 'chillax', sans-serif;
 	font-size: 38px;
-	color: #E09083;
+	color: black;
 	margin-top: -160px;
 	margin-bottom: 70px;
 	margin-left: 15px;
@@ -355,7 +355,7 @@ body {
 
 .description {
 	font-family: 'montserrat', sans-serif;
-	color: #E09083;
+	color: black;
 	margin-top: -50px;
 	margin-left: 20px;
 	margin-right: 20px;
