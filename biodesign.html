@@ -44,7 +44,7 @@
   <div class="voile"></div>  <!-- Voile transparent -->
 
   <div class="hero-text1">Biodesign et numérique</div>
-  <div class="hero-text2">Création d’un livre collectif au sein de la promo L3 Design, option Biodesign et Numérique. Le projet a été conçu en plusieurs groupes : un pour la couverture, un pour le sommaire, et d’autres pour les pages inter-articles… Chaque section a été partagée et développée via un « book collab ». En parallèle, les groupes ont pu expérimenter le codage HTML et CSS, tout en apprenant les techniques nécessaires à la réalisation des 40 exemplaires du livre.</div>
+  <div class="hero-text2">Création d’un livre collectif en L3 Design, option Biodesign et Numérique. Répartition en groupes pour la couverture, le sommaire et les pages inter-articles, avec développement collaboratif via un "book collab". Réalisation de 40 exemplaires imprimés, incluant une initiation au HTML et CSS.</div>
 
   </div>
 
@@ -67,7 +67,7 @@
 
 </div>
 
-</section>>
+</section>
 
 <script>
 
@@ -130,6 +130,24 @@ function closeEnlarged() {
   galerie.classList.remove('blur-background');
 }
 
+
+
+// JAVASCRIPT POUR LE BACKGROUND QUI S AFFICHE AVEC UNE TRANSITION
+  document.addEventListener('DOMContentLoaded', function () {
+    const galerie = document.querySelector('.galerie');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          galerie.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1 // Déclenche quand 10% de la galerie est visible
+    });
+
+    observer.observe(galerie);
+  });
 
 </script>
 

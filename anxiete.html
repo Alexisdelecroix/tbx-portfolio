@@ -44,7 +44,7 @@
   <div class="voile"></div>  <!-- Voile transparent -->
 
   <div class="hero-text1">Anxiété & Université</div>
-  <div class="hero-text2">À travers les haïkus, s’ouvre un sujet de société sans imposer de jugement. L’interprétation du problème devient ainsi personnelle, laissant à chacun la liberté de le voir sous un angle positif ou négatif.</div>
+  <div class="hero-text2">Conception d’un projet de design social en réponse à l’augmentation de l’anxiété étudiante à l’Université de Nîmes. Réalisation d’un site web, d’un groupe WhatsApp et d’une campagne de communication, présentés lors de l’exposition de fin de licence design.</div>
 
   </div>
 
@@ -79,6 +79,7 @@
 
 <script>
 
+// JAVASCRIPT POUR LES IMAGES CLICABLE DANS GALLERIE
 // Sélectionne toutes les images dans la galerie (éléments <img> à l’intérieur de .galerie)
 const images = document.querySelectorAll('.galerie img');
 
@@ -137,6 +138,25 @@ function closeEnlarged() {
   // Enlève la classe 'blur-background' pour enlever le flou sur la galerie
   galerie.classList.remove('blur-background');
 }
+
+
+
+// JAVASCRIPT POUR LE BACKGROUND QUI S AFFICHE AVEC UNE TRANSITION
+  document.addEventListener('DOMContentLoaded', function () {
+    const galerie = document.querySelector('.galerie');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          galerie.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1 // Déclenche quand 10% de la galerie est visible
+    });
+
+    observer.observe(galerie);
+  });
 
 
 </script>

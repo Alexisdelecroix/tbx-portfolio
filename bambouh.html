@@ -44,7 +44,7 @@
   <div class="voile"></div>  <!-- Voile transparent -->
 
   <div class="hero-text1">Le Bambouh</div>
-  <div class="hero-text2">Création de cartes de visite pour le photographe thérapeutique ‘Le Bambouh’. Deux propositions ont été présentées, et c’est la première, au format rond, qui a été retenue pour son originalité et son impact visuel.Création d’une page d’accueil d’application pour le photographe le Bambouh. Cet exercice as permit une initiation sur le logiciel Figma.</div>
+  <div class="hero-text2">Création de cartes de visite pour le photographe thérapeutique Le Bambouh. Deux propositions sont réalisées, c'est celle au format rond est retenue pour son impact visuel. Grâce à l'identité visuelle de la carte de visite, une page d’accueil de site web à était créer avec le logiciel Figma.</div>
 
   </div>
 
@@ -58,9 +58,13 @@
 
 <section class="galerie">
 
+<div class="bottom-images">
+
   <img src="image/cartebambouh1.jpg" alt="Image 1">
   <img src="image/cartebambouh2.jpg" alt="Image 2">
   <img src="image/sitebambouh.jpg" alt="Image 2">
+  
+</div>
 
 </section>
 
@@ -125,6 +129,23 @@ function closeEnlarged() {
   galerie.classList.remove('blur-background');
 }
 
+
+// JAVASCRIPT POUR LE BACKGROUND QUI S AFFICHE AVEC UNE TRANSITION
+  document.addEventListener('DOMContentLoaded', function () {
+    const galerie = document.querySelector('.galerie');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          galerie.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1 // Déclenche quand 10% de la galerie est visible
+    });
+
+    observer.observe(galerie);
+  });
 
 </script>
 
