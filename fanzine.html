@@ -44,7 +44,7 @@
   <div class="voile"></div>  <!-- Voile transparent -->
 
   <div class="hero-text1">Regard & Lâcher prise</div>
-  <div class="hero-text2">Ce fanzine, à mi-chemin entre l’écrit et l’illustration, retranscrit une émotion brute : celle de ne plus se sentir en sécurité lors des raves, sous les regards insistants et les demandes oppressantes. Entièrement réalisé sur Procreate, il mêle visuel et ressenti.</div>
+  <div class="hero-text2">Ce fanzine, à mi-chemin entre l’écrit et l’illustration, retranscrit une émotion : celle de ne plus se sentir en sécurité lors des raves, sous les regards insistants et les demandes oppressantes. Entièrement réalisé sur Procreate, il mêle visuel et ressenti.</div>
 
   </div>
 
@@ -134,6 +134,23 @@ function closeEnlarged() {
 }
 
 
+// JAVASCRIPT POUR LE BACKGROUND QUI S AFFICHE AVEC UNE TRANSITION
+  document.addEventListener('DOMContentLoaded', function () {
+    const galerie = document.querySelector('.galerie');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          galerie.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1 // Déclenche quand 10% de la galerie est visible
+    });
+
+    observer.observe(galerie);
+  });
+  
 </script>
 
 

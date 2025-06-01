@@ -5,6 +5,8 @@ body, html {
   margin: 0; /* Supprime les marges par défaut autour du corps et de la page */
   padding: 0; /* Supprime les espacements internes par défaut */
   box-sizing: border-box; /* Inclut la bordure et le padding dans la largeur/hauteur des éléments */
+  text-decoration: none;
+  list-style: none;
 }
 
 
@@ -60,7 +62,6 @@ body, html {
   color: #B98379;
   background-color: transparent; /* Pas de fond pour les liens */
   text-decoration: none; /* Enlève le soulignement */
-  list-style: none; /* Supprime les puces */
 }
 
 .navbar .nom {
@@ -70,6 +71,7 @@ body, html {
 }
 
 .navbar .nav-links ul {
+  list-style: none; /* Supprime les puces */
   display: flex; /* Aligne les liens horizontalement */
   font-size: 18px;
 }

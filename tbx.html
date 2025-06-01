@@ -44,7 +44,7 @@
   <div class="voile"></div>  <!-- Voile transparent -->
 
   <div class="hero-text1">TBX Design</div>
-  <div class="hero-text2">Développement d’un compte Instagram en collaboration avec un community manager, incluant la mise en place d’un réseau solide, une stratégie de prospection, et la publication régulière de posts et de réels. Des autocollants promotionnels ont également été créés pour booster la visibilité. En seulement un mois, ce compte a généré des prises de contact, des commandes et des collaborations. Le lien vers le compte Instagram se trouve en haut de cette page.</div>
+  <div class="hero-text2">Création et gestion d’un compte Instagram en collaboration avec un community manager : mise en place d’une stratégie de prospection, publications régulières (posts & réels), et création de stickers promotionnels. Résultats en 1 mois : visibilité accrue, commandes et collaborations.</div>
 
   </div>
 
@@ -124,6 +124,23 @@ function closeEnlarged() {
   galerie.classList.remove('blur-background');
 }
 
+
+// JAVASCRIPT POUR LE BACKGROUND QUI S AFFICHE AVEC UNE TRANSITION
+  document.addEventListener('DOMContentLoaded', function () {
+    const galerie = document.querySelector('.galerie');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          galerie.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1 // Déclenche quand 10% de la galerie est visible
+    });
+
+    observer.observe(galerie);
+  });
 
 </script>
 

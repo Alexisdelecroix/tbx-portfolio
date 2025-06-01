@@ -72,6 +72,7 @@ body, html {
 .navbar .nav-links ul {
   display: flex; /* Aligne les liens horizontalement */
   font-size: 18px;
+  list-style: none;
 }
 
 .navbar .nav-links ul li {
@@ -262,7 +263,7 @@ body, html {
 /* Effet zoom léger et ombre renforcée au survol */
 
 .galerie img:hover {
-  transform: scale(1.10); /* Agrandit légèrement l’image au survol (zoom à 110%) */
+  transform: scale(1.05); /* Agrandit légèrement l’image au survol (zoom à 110%) */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Ombre portée plus visible pour faire ressortir l’image */
 }
 

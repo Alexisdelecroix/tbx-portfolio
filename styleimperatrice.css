@@ -252,7 +252,7 @@ body, html {
 
 .galerie img {
   width: 100%; /* L’image prend toute la largeur de son conteneur */
-  max-width: 500px; /* La largeur maximale de l’image est de 500px */
+  max-width: 440px; /* La largeur maximale de l’image est de 500px */
   height: auto; /* La hauteur s’adapte automatiquement pour garder les proportions */
   border-radius: 10px; /* Arrondit les coins de l’image avec un rayon de 10px */
   cursor: pointer; /* Change le curseur en main pour indiquer que l’image est cliquable */
