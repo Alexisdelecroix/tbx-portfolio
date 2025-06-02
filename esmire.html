@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio</title>
-  <link rel="stylesheet" href="styles2.css" />
+  <link rel="stylesheet" href="styleesmire.css" />
 </head>
 <body>
 
@@ -39,12 +39,12 @@
 
   <!-- La garnde image-->
 
-  <img src="image/esmiref.jpg" alt="Image hero" class="hero-img">
+  <img src="image/esmireb.jpg" alt="Image hero" class="hero-img">
 
   <div class="voile"></div>  <!-- Voile transparent -->
 
   <div class="hero-text1">Esmiré</div>
-  <div class="hero-text2">À travers les haïkus, s’ouvre un sujet de société sans imposer de jugement. L’interprétation du problème devient ainsi personnelle, laissant à chacun la liberté de le voir sous un angle positif ou négatif.</div>
+  <div class="hero-text2">Conception du logo pour Esmiré, marque de bijoux de corps, avec des déclinaisons colorées selon les collections. Ce logo a été utilisé sur les réseaux sociaux, des stickers et divers supports de communication. </div>
 
   </div>
 
@@ -58,8 +58,8 @@
 
 <section class="galerie">
 
-  <img src="image/affiche.jpeg" alt="Image 1">
-  <img src="image/affiche2.jpeg" alt="Image 2">
+  <img src="image/esmire1.jpg" alt="Image 1">
+  <img src="image/esmire2.jpg" alt="Image 2">
 
 </section>
 
@@ -124,6 +124,22 @@ function closeEnlarged() {
   galerie.classList.remove('blur-background');
 }
 
+// JAVASCRIPT POUR LE BACKGROUND QUI S AFFICHE AVEC UNE TRANSITION
+  document.addEventListener('DOMContentLoaded', function () {
+    const galerie = document.querySelector('.galerie');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          galerie.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1 // Déclenche quand 10% de la galerie est visible
+    });
+
+    observer.observe(galerie);
+  });
 
 </script>
 
