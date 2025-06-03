@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio</title>
-  <link rel="stylesheet" href="styles2.css" />
+  <link rel="stylesheet" href="stylewordpress.css" />
 </head>
 <body>
 
@@ -39,12 +39,12 @@
 
   <!-- La garnde image-->
 
-  <img src="image/wordpressf.jpg" alt="Image hero" class="hero-img">
+  <img src="image/wordpressb.jpg" alt="Image hero" class="hero-img">
 
   <div class="voile"></div>  <!-- Voile transparent -->
 
   <div class="hero-text1">Wordpress portfolio</div>
-  <div class="hero-text2">À travers les haïkus, s’ouvre un sujet de société sans imposer de jugement. L’interprétation du problème devient ainsi personnelle, laissant à chacun la liberté de le voir sous un angle positif ou négatif.</div>
+  <div class="hero-text2">Réalisation d’un premier portfolio en ligne via WordPress. Le projet s’est construit en plusieurs étapes : prise de vues photographiques, retouche et traitement sur Photoshop, prise en main de WordPress et personnalisation via HTML/CSS.</div>
 
   </div>
 
@@ -58,8 +58,8 @@
 
 <section class="galerie">
 
-  <img src="image/affiche.jpeg" alt="Image 1">
-  <img src="image/affiche2.jpeg" alt="Image 2">
+  <img src="image/wordpress1.jpg" alt="Image 1">
+  <a href="https://tablorene.wordpress.com/#image?fbclid=PAZXh0bgNhZW0CMTEAAacDc-LSxSjNtP_DaHdyP6RQxoQlJE9OHwK5kS5nZwW2Zr4iJfsMYN2XKjgZ5g_aem_G6NUQpl8PLdc69eHxFUvZA"><img src="image/wordpress2.jpg" alt="Image 2"></a>
 
 </section>
 
@@ -123,6 +123,23 @@ function closeEnlarged() {
   // Enlève la classe 'blur-background' pour enlever le flou sur la galerie
   galerie.classList.remove('blur-background');
 }
+
+// JAVASCRIPT POUR LE BACKGROUND QUI S AFFICHE AVEC UNE TRANSITION
+  document.addEventListener('DOMContentLoaded', function () {
+    const galerie = document.querySelector('.galerie');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          galerie.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1 // Déclenche quand 10% de la galerie est visible
+    });
+
+    observer.observe(galerie);
+  });
 
 
 </script>
