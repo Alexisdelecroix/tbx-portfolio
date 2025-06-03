@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio</title>
-  <link rel="stylesheet" href="styles2.css" />
+  <link rel="stylesheet" href="stylesoignantes.css" />
 </head>
 <body>
 
@@ -39,12 +39,12 @@
 
   <!-- La garnde image-->
 
-  <img src="image/soignantef.jpg" alt="Image hero" class="hero-img">
+  <img src="image/soignantesb.jpg" alt="Image hero" class="hero-img">
 
   <div class="voile"></div>  <!-- Voile transparent -->
 
   <div class="hero-text1">Soignantes du désert</div>
-  <div class="hero-text2">À travers les haïkus, s’ouvre un sujet de société sans imposer de jugement. L’interprétation du problème devient ainsi personnelle, laissant à chacun la liberté de le voir sous un angle positif ou négatif.</div>
+  <div class="hero-text2">Mise en place d’un logo pour Les Soignantes du Désert, dans le cardre du 4L Trophy 2026. L’objectif était de créer un visuel destiné à la fois aux réseaux sociaux et à l’impression d’autocollants pour leur véhicule. Le tout a été réalisé sur Procreate.</div>
 
   </div>
 
@@ -58,8 +58,7 @@
 
 <section class="galerie">
 
-  <img src="image/affiche.jpeg" alt="Image 1">
-  <img src="image/affiche2.jpeg" alt="Image 2">
+  <img src="image/soignantes1.jpg" alt="Image 1">
 
 </section>
 
@@ -124,6 +123,23 @@ function closeEnlarged() {
   galerie.classList.remove('blur-background');
 }
 
+
+// JAVASCRIPT POUR LE BACKGROUND QUI S AFFICHE AVEC UNE TRANSITION
+  document.addEventListener('DOMContentLoaded', function () {
+    const galerie = document.querySelector('.galerie');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          galerie.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1 // Déclenche quand 10% de la galerie est visible
+    });
+
+    observer.observe(galerie);
+  });
 
 </script>
 

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio</title>
-  <link rel="stylesheet" href="styles2.css" />
+  <link rel="stylesheet" href="stylecartoe.css" />
 </head>
 <body>
 
@@ -39,12 +39,12 @@
 
   <!-- La garnde image-->
 
-  <img src="image/cartof.jpg" alt="Image hero" class="hero-img">
+  <img src="image/cartoeb.jpg" alt="Image hero" class="hero-img">
 
   <div class="voile"></div>  <!-- Voile transparent -->
 
   <div class="hero-text1">Cartoé'nîmes</div>
-  <div class="hero-text2">À travers les haïkus, s’ouvre un sujet de société sans imposer de jugement. L’interprétation du problème devient ainsi personnelle, laissant à chacun la liberté de le voir sous un angle positif ou négatif.</div>
+  <div class="hero-text2">Projet de design social visant à encourager la marche en ville. Réalisé sur Illustrator et InDesign, cette carte interactive intègre un jeu incitant les utilisateurs à explorer les lieux clés de Nîmes à pied. L'expérience transforme la découverte de la ville en un parcours ludique et engageant. </div>
 
   </div>
 
@@ -58,8 +58,8 @@
 
 <section class="galerie">
 
-  <img src="image/affiche.jpeg" alt="Image 1">
-  <img src="image/affiche2.jpeg" alt="Image 2">
+  <img src="image/cartoe1.jpg" alt="Image 1">
+  <img src="image/cartoe2.jpg" alt="Image 2">
 
 </section>
 
@@ -124,6 +124,22 @@ function closeEnlarged() {
   galerie.classList.remove('blur-background');
 }
 
+// JAVASCRIPT POUR LE BACKGROUND QUI S AFFICHE AVEC UNE TRANSITION
+  document.addEventListener('DOMContentLoaded', function () {
+    const galerie = document.querySelector('.galerie');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          galerie.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1 // Déclenche quand 10% de la galerie est visible
+    });
+
+    observer.observe(galerie);
+  });
 
 </script>
 
