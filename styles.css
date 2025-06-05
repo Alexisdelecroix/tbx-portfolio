@@ -623,6 +623,11 @@ body {
   .projet {
     display: block;
   }
+
+  .gallery .cellule:hover {
+  filter: grayscale(10%); /* Applique un léger filtre gris */
+  z-index: 1; /* Fait passer l’élément au-dessus des autres */
+}
 }
 
 /* === Décalage sur iphone 12 === */
