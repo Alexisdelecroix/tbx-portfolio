@@ -358,3 +358,12 @@ body, html {
   width: 100%;
   max-width: 447px;
 }
+
+
+/* Responsive pour petit téléphone */
+@media (max-width: 375px) {
+
+.galerie {
+  background-color: #B98379;
+}
+}
