@@ -153,6 +153,7 @@ body, html {
     margin: 40px 0; /* Espacement vertical entre les liens */
     text-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* ← Ajoute juste une ombre portée */
     text-align: center;
+
   }
 }
 
@@ -166,6 +167,17 @@ body, html {
   }
 }
 
+/* Responsive pour petit téléphone */
+@media (max-width: 375px) {
+
+  .navbar .nav-links ul li {
+    font-size: 28px;
+    margin: 40px 0; /* Espacement vertical entre les liens */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* ← Ajoute juste une ombre portée */
+    text-align: center;
+    margin-right: 35px;
+  }
+}
 
 
 
