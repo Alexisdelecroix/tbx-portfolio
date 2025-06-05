@@ -159,6 +159,18 @@ body, html {
   }
 }
 
+/* Responsive pour petit téléphone */
+@media (max-width: 375px) {
+
+  .navbar .nav-links ul li {
+    font-size: 28px;
+    margin: 40px 0; /* Espacement vertical entre les liens */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* ← Ajoute juste une ombre portée */
+    text-align: center;
+    margin-right: 35px;
+  }
+}
+
 
 
 
@@ -226,7 +238,47 @@ body, html {
 }
 
 
+/* Responsive pour petit téléphone */
+@media (max-width: 375px) {
 
+.hero-img {
+  margin-top: 20px;
+  margin-left: -80px;
+  margin-right: -80px;
+  position: absolute; /* Position absolue pour recouvrir complètement le parent */
+  top: 0; /* Positionnée en haut du parent */
+  left: 0; /* Alignée à gauche du parent */
+  width: 100%; /* Largeur maximale pour remplir le parent */
+  height: 55%; /* Hauteur maximale pour remplir le parent */
+  object-fit: cover; /* L'image couvre entièrement son conteneur en conservant ses proportions */
+  z-index: 1; /* Ordre d'empilement : positionne l'image derrière les autres éléments avec un z-index plus élevé */
+}
+
+.hero-text1, .hero-text2 {
+  line-height: 22rem;
+  margin-left: 40px;
+  position: relative; /* Position relative pour permettre l'utilisation de z-index */
+  z-index: 2; /* Empile le texte au-dessus du voile (à noter que voile a aussi z-index 2, ce serait mieux d'avoir un z-index supérieur) */
+  color: #B98379; /* Texte en blanc */
+  top: 55%; /* Décalage vers le bas à 80% de la hauteur du parent */
+  transform: translateY(-50%); /* Décale verticalement le texte vers le haut de 50% de sa propre hauteur (centrage vertical approximatif) */
+}
+
+.hero-text1 {
+  margin-top: -10px;
+  font-family: "chillax";
+  font-weight:bolder;
+  font-size: 26px; 
+}
+
+.hero-text2 {
+  margin-top: -240px;
+  margin-right: 20px;
+  line-height: 1.2rem;
+  font-family: "montserrat";
+  font-size: 14px; 
+}
+}
 
 
 
@@ -314,4 +366,23 @@ body, html {
 .bottom-images img {
   width: auto;
   max-width: 500px;
+}
+
+
+/* Responsive pour petit téléphone */
+@media (max-width: 375px) {
+
+.galerie img {
+  width: 100%; /* L’image prend toute la largeur de son conteneur */
+  max-width: 300px; /* La largeur maximale de l’image est de 500px */
+  height: auto; /* La hauteur s’adapte automatiquement pour garder les proportions */
+  border-radius: 10px; /* Arrondit les coins de l’image avec un rayon de 10px */
+  cursor: pointer; /* Change le curseur en main pour indiquer que l’image est cliquable */
+  transition: transform 0.4s ease, box-shadow 0.4s ease; /* Anime en douceur la transformation et l’ombre */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Ombre portée subtile sous l’image */
+}
+
+.galerie {
+  background-color: #B98379;
+}
 }
