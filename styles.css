@@ -181,7 +181,7 @@ body {
 }
 
 
-/* === Responsive pour téléphone === */
+/* === Responsive pour téléphone (tous les types) === */
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
@@ -248,18 +248,18 @@ body {
 
 
 
-/* Responsive pour téléphone */
+/* Responsive pour téléphone ( pour tous les types)*/
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
 	.text-portfolio {
-		top: -19rem; /* Descend encore */
+		top: -17rem; /* Descend encore */
 		font-size: 40px; /* Plus petit pour téléphones */
 	}
 
 
 		.text-tbx {
 	top: -24rem; /* Encore plus haut */
-	font-size: 380px; /* Très grand pour l'effet "&" de fond */
+	font-size: 180px; /* Très grand pour l'effet "&" de fond */
 	opacity: 0.1; /* Semi-transparent */
 	line-height: 1; /* Ligne serrée */
 }
@@ -296,7 +296,17 @@ body {
 	}
 
 
+/* Responsive pour petit téléphone */
 
+@media (max-width: 375px) {
+	.titre1 {
+		font-family: "kindora";
+		font-size: 30px;
+		margin-top: -60px;
+		margin-left: 20px;
+		margin-bottom: 250px;
+	}
+}
 
 
 /* === DERNIERE REALISATION (CARROUSEL HORIZONTAL) === */
