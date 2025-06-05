@@ -251,7 +251,7 @@ body, html {
 }
 
 .hero-text1 {
-  margin-top: 30px;
+  margin-top: 0px;
   font-family: "chillax";
   font-weight:bolder;
   font-size: 30px; 
@@ -262,7 +262,7 @@ body, html {
   margin-right: 20px;
   line-height: 1.2rem;
   font-family: "montserrat";
-  font-size: 13px; 
+  font-size: 14px; 
 }
 }
 
