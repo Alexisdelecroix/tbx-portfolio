@@ -633,6 +633,7 @@ body {
 
   .gallery .cellule:hover {
   filter: grayscale(10%); /* Applique un léger filtre gris */
+   transform: none; /* Enlever le zoom au survol */
   z-index: 1; /* Fait passer l’élément au-dessus des autres */
 }
 }
