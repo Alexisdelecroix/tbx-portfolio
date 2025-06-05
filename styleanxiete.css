@@ -228,7 +228,7 @@ body, html {
 @media (max-width: 375px) {
 
 .hero-img {
-  margin-top: 50px;
+  margin-top: 20px;
   margin-left: -80px;
   margin-right: -80px;
   position: absolute; /* Position absolue pour recouvrir complètement le parent */
@@ -251,7 +251,7 @@ body, html {
 }
 
 .hero-text1 {
-  margin-top: 0px;
+  margin-top: -10px;
   font-family: "chillax";
   font-weight:bolder;
   font-size: 30px; 
