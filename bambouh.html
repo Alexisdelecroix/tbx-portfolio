@@ -69,6 +69,24 @@
 
 <script>
 
+
+// JAVASCRIPT POUR NAVBAR
+const menuHamburger = document.querySelector(".menu-hamburger"); // Récupère l'élément du menu hamburger
+const navLinks = document.querySelector(".nav-links"); // Récupère l'élément des liens de navigation
+const navLinksa = document.querySelectorAll(".nav-links a");
+
+menuHamburger.addEventListener('click', () => { // Ajoute un événement au clic du menu hamburger
+  navLinks.classList.toggle('mobile-menu'); // Ajoute ou enlève la classe "mobile-menu" pour afficher ou masquer le menu
+});
+
+navLinksa.forEach(link => { // Exemple : ajouter un écouteur d'événement
+    ink.addEventListener('click', () => {
+    navLinks.classList.remove('mobile-menu'); // Ajoute ou enlève la classe "mobile-menu" pour afficher ou masquer le menu
+});
+});
+
+
+// JAVASCRIPT POUR LES IMAGES CLICABLE DANS GALLERIE
 // Sélectionne toutes les images dans la galerie (éléments <img> à l’intérieur de .galerie)
 const images = document.querySelectorAll('.galerie img');
 
