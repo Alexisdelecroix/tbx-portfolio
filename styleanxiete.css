@@ -157,16 +157,6 @@ body, html {
   }
 }
 
-/* === Responsive pour tablette === */
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
-  .navbar .nom {
-    font-size: 30px;
-    margin-left: -90px;
-  }
-}
-
 
 
 
@@ -225,6 +215,7 @@ body, html {
 
 
 /* Responsive pour téléphone */
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
 .hero-img {
@@ -365,7 +356,8 @@ body, html {
 }
 
 
-/* Responsive pour petit téléphone */
+/* Responsive pour téléphone */
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
 .galerie {

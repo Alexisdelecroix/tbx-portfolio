@@ -157,16 +157,6 @@ body, html {
   }
 }
 
-/* === Responsive pour tablette === */
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
-  .navbar .nom {
-    font-size: 30px;
-    margin-left: -90px;
-  }
-}
-
 
 
 
@@ -235,17 +225,18 @@ body, html {
 
 
 /* Responsive pour téléphone */
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
 .hero-img {
-  margin-top: 20px;
+  margin-top: -45px;
   margin-left: -90px;
   margin-right: -90px;
   position: absolute; /* Position absolue pour recouvrir complètement le parent */
   top: 0; /* Positionnée en haut du parent */
   left: 0; /* Alignée à gauche du parent */
-  width: 100%; /* Largeur maximale pour remplir le parent */
-  height: 55%; /* Hauteur maximale pour remplir le parent */
+  width: 130%; /* Largeur maximale pour remplir le parent */
+  height: 70%; /* Hauteur maximale pour remplir le parent */
   object-fit: cover; /* L'image couvre entièrement son conteneur en conservant ses proportions */
   z-index: 1; /* Ordre d'empilement : positionne l'image derrière les autres éléments avec un z-index plus élevé */
 }
@@ -370,6 +361,7 @@ body, html {
 
 
 /* Responsive pour téléphone */
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
 .galerie img {

@@ -22,6 +22,8 @@ body {
 }
 
 
+
+
 /* === VARIABLES CSS GLOBALES === */
 
 :root {
@@ -32,6 +34,9 @@ body {
 	--couleur-fonce: 	#B98379; /* Couleur principale */
 	--couleur-clair: white; /* Couleur secondaire */
 }
+
+
+
 
 
 /* === IMPORT DES TYPOGRAPHIE === */
@@ -58,6 +63,8 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+
 
 
 /* === STRUCTURE DES GRANDES SECTIONS === */
@@ -131,8 +138,6 @@ body {
 	cursor: pointer; /* Curseur en forme de main au survol */
 }
 
-
-
 /* === Version hamburger === */
 
 @media screen and (max-width: 900px) {
@@ -180,8 +185,7 @@ body {
 	}
 }
 
-
-/* === Responsive pour téléphone (tous les types) === */
+/* === Responsive pour téléphone === */
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
@@ -198,15 +202,9 @@ body {
 	}
 }
 
-/* === Responsive pour tablette === */
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
 
-	.navbar .nom {
-		font-size: 30px;
-		margin-left: -90px;
-	}
-}
+
 
 
 
@@ -254,8 +252,7 @@ body {
 }
 
 
-
-/* Responsive pour téléphone ( pour tous les types)*/
+/* Responsive pour téléphone */
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
 	.text-portfolio {
@@ -272,21 +269,11 @@ body {
 }
 }
 
-/* Responsive pour tablette */
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-	.text-portfolio {
-		top: -19rem; /* Descend encore */
-		font-size: 60px; /* Plus petit pour téléphones */
-	}
 
-	.text-tbx {
-	top: -24rem; /* Encore plus haut */
-	font-size: 440px; /* Très grand pour l'effet "&" de fond */
-	opacity: 0.1; /* Semi-transparent */
-	line-height: 1; /* Ligne serrée */
-}
-}
+
+
+
 
 
 
@@ -302,10 +289,9 @@ body {
 		margin-bottom: -60px;
 	}
 
+/* Responsive pour téléphone */
 
-/* Responsive pour petit téléphone */
-
-@media (max-width: 375px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
 	.titre1 {
 		font-family: "kindora";
 		font-size: 32px;
@@ -316,9 +302,16 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
 /* === DERNIERE REALISATION (CARROUSEL HORIZONTAL) === */
-
-
 
 .réalisation {
   display: flex;
@@ -330,11 +323,6 @@ body {
 .réalisation::-webkit-scrollbar {
   display: none;
 }
-
-
-
-
-
 
 .item {
 	background-color: var(--couleur-fonce);
@@ -385,31 +373,9 @@ body {
 
 }
 
-
-
 /* Responsive pour téléphone */
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
-
-	.dernières {
-		position: relative;
-		top: -27rem; /* Descend encore */
-	}
-}
-
-	/* === Responsive pour tablette === */
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
-	.dernières {
-		position: relative;
-		top: -50rem; /* Descend encore */
-	}
-}
-
-
-/* Responsive pour petit téléphone */
-@media (max-width: 375px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
 
 	.dernières {
 		position: relative;
@@ -474,6 +440,8 @@ body {
 
 
 
+
+
 /* === TITRE TOUS MES PROJET=== */
 
 .titre2 {
@@ -484,8 +452,9 @@ body {
 		margin-bottom: -60px;
 	}
 
-/* Responsive pour petit téléphone */
-@media (max-width: 375px) {
+/* Responsive pour téléphone */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
 
 	.titre2 {
 		font-family: "kindora";
@@ -495,6 +464,13 @@ body {
 		margin-bottom: 20px;
 	}
 }
+
+
+
+
+
+
+
 
 
 /* === PROJET === */
@@ -561,55 +537,9 @@ body {
 }
 
 
+/* Responsive pour téléphone */
 
-/* === Responsive pour téléphone === */
-
-@media screen and (min-width: 320px) and (max-width: 575px) {
-
-  .gallery {
-    grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur petit écran */
-    gap: 10px;
-    margin-top: -300px;
-    max-width: 100%;
-  }
-
-  .gallery > .cellule {
-    aspect-ratio: 1; /* Garde le format carré même sur mobile */
-  }
-
-  .interieur {
-    font-size: 30px; /* Réduit la taille du texte dans les cellules */
-  }
-
-  .projet {
-    display: block;
-  }
-}
-
-/* === Responsive pour tablette === */
-
-@media screen and (min-width: 576px) and (max-width: 1024px) {
-
-  .gallery {
-    grid-template-columns: repeat(2, 1fr); /* 3 colonnes sur tablette */
-    gap: 15px;
-    padding: 15px;
-    max-width: 100%;
-    margin-top: -1000px;
-  }
-
-  .gallery > .cellule {
-    aspect-ratio: 1; /* Garde le format carré même sur mobile */
-  }
-
-  .interieur {
-    font-size: 25px; /* Taille de police intermédiaire */
-    padding: 3em 2.5em;
-  }
-}
-
-/* Responsive pour petit téléphone */
-@media (max-width: 375px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
 
   .gallery {
     grid-template-columns: repeat(1, 1fr); /* 2 colonnes sur petit écran */
@@ -638,8 +568,6 @@ body {
 }
 }
 
-
-
 /* Enlever la couleur des liens */
 
 .projet a {
@@ -650,7 +578,17 @@ body {
 
 
 
-/* Bas et mentions */
+
+
+
+
+
+
+
+
+
+
+/* BAS ET MENTIONS */
 
 .footer {
   background-color: #B98379; /* Couleur de fond */
@@ -689,19 +627,9 @@ body {
 
 
 
-/* Responsive mobile */
-@media (max-width: 600px) {
-  .footer-content {
-    flex-direction: column;
-  }
+/* Responsive téléphone */
 
-  .footer-nav a {
-    margin: 5px 10px;
-  }
-}
-
-/* Responsive pour petit téléphone */
-@media (max-width: 375px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
 
 .footer {
   background-color: #B98379; /* Couleur de fond */
@@ -715,5 +643,12 @@ body {
   width: 100%;
   margin-top: 150px;
 }
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-nav a {
+    margin: 5px 10px;
+  }
 }
 

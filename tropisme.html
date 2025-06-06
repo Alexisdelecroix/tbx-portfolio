@@ -42,7 +42,7 @@
 
   <div class="voile"></div>  <!-- Voile transparent -->
 
-  <div class="hero-text1">Un mois au Ateliers Tropismes</div>
+  <div class="hero-text1">Ateliers Tropismes</div>
   <div class="hero-text2">Mise en page du rapport de stage réalisé aux Ateliers Tropismes en janvier 2025, sous l’encadrement de l’artiste Cédrick Eymenier. Un travail de veille a été mené afin de respecter et refléter l’identité visuelle des Ateliers Tropismes. L’ensemble du document a été conçu sur InDesign.</div>
 
   </div>
@@ -72,6 +72,23 @@
 
 <script>
 
+  // JAVASCRIPT POUR NAVBAR
+    const menuHamburger = document.querySelector(".menu-hamburger"); // Récupère l'élément du menu hamburger
+    const navLinks = document.querySelector(".nav-links"); // Récupère l'élément des liens de navigation
+    const navLinksa = document.querySelectorAll(".nav-links a");
+
+    menuHamburger.addEventListener('click', () => { // Ajoute un événement au clic du menu hamburger
+        navLinks.classList.toggle('mobile-menu'); // Ajoute ou enlève la classe "mobile-menu" pour afficher ou masquer le menu
+    });
+
+    navLinksa.forEach(link => { // Exemple : ajouter un écouteur d'événement
+        link.addEventListener('click', () => {
+        navLinks.classList.remove('mobile-menu'); // Ajoute ou enlève la classe "mobile-menu" pour afficher ou masquer le menu
+    });
+    });
+
+
+// JAVASCRIPT POUR LES IMAGES CLICABLE DANS GALLERIE
 // Sélectionne toutes les images dans la galerie (éléments <img> à l’intérieur de .galerie)
 const images = document.querySelectorAll('.galerie img');
 
