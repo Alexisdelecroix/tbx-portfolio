@@ -229,13 +229,13 @@ body, html {
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
 .hero-img {
-  margin-top: -45px;
+  margin-top: -30px;
   margin-left: -90px;
   margin-right: -90px;
   position: absolute; /* Position absolue pour recouvrir complètement le parent */
   top: 0; /* Positionnée en haut du parent */
   left: 0; /* Alignée à gauche du parent */
-  width: 150%; /* Largeur maximale pour remplir le parent */
+  width: 160%; /* Largeur maximale pour remplir le parent */
   height: 70%; /* Hauteur maximale pour remplir le parent */
   object-fit: cover; /* L'image couvre entièrement son conteneur en conservant ses proportions */
   z-index: 1; /* Ordre d'empilement : positionne l'image derrière les autres éléments avec un z-index plus élevé */
